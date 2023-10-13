@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+   
+    <title>Microservices Example</title>
+    
+    <style>
+  
+    </style>
+  </head>
+<body>
+	
+		
+	
+	<div class="card mr-3 ml-3">
+	
+	<div class="card-body">
+		
+		<br>
+		<div class="red"></div> Content in Red Border or Red Color is comming from <b>Hotel Service</b>
+		<br><br>
+		<div class="green"></div> Content in Green Border or Green Color is comming from <b>User Service</b>
+		<br><br>
+		<div class="blue"></div> Content in Blue Border or Blue Color is comming from <b>Rating Service</b>
+		<br><br>
+		<hr>
+		
+		<h1 class="text-center text-info">Top Hotels in Maharashtra</h1>
+		<br>
+		
+		<hr>
+		
+		<table class="center">
+		
+			<tr th:each="hotel: ${hotels}">
+		
+		<div class="container">
+			<div class = "row">
+			
+				<div class="column">
+					 <img style="height:200px" class="contact_profile_pic hotelimage" th:src = "@{'/image/'+${hotel.image}}" alt="Hotel photo">
+				</div>
+				<div class="column">  
+					       
+					                                                          
+					 <h3> <span style="color: red" th:text="${hotel.name}"></span></h3>          
+					 <h4><span style="color: red" th:text="${hotel.location}"></span></h4>    
+						 
+					 <h3>Reviews:</h3>
+						
+					 <div th:each="hr: ${hotel.ratings}">
+					
+						 <div th:each="hru: ${hr.users}">
+						 	 <span style="color: green" th:text="${hru.name}"></span>
+						 </div>
+						 <img class="star" style="height:20px" th:src = "@{'/image/'+${hr.rating}+star.jpg}" alt="Hotel rating"><br>
+						 <span style="color: blue" th:text="${hr.feedback}"></span>
+						 
+						 <br><br><br>
+						 
+					 </div>
+					 
+				
+				</div>
+		
+			</div>
+			
+			</div>
+			
+				<hr>
+			</tr>
+		
+	
+		
+		</table>
+	
+	
+		
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+</body>
+</html>
