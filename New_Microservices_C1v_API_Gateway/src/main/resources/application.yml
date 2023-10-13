@@ -1,0 +1,39 @@
+
+
+
+server:
+   port: 8084
+   
+   
+   
+eureka:
+   instance:
+      hostname: localhost    
+   
+spring: 
+   application:
+      name: apigateway
+   cloud:
+      gateway:
+         routes:
+          - id: hotel-service
+            uri: lb://hotel-service
+            predicates:
+             - Path= /hotel/**
+          - id: rating-service
+            uri: lb://rating-service
+            predicates:
+             - Path= /rating/**,/staff/**   
+          - id: user-service
+            uri: lb://user-service
+            predicates:
+             - Path= /user/**             
+        
+          
+       
+       
+   
+            
+
+             
+   
