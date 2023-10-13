@@ -5,7 +5,7 @@
 
 
  ## Try Api's in postman app as well as you can also try in Browser
- ## Frontend Page is also created for better understanding try to accessing it by using localhost:8081/user/home or localhost:8084/user/home
+ ## Frontend Page is also created, try accessing it by using localhost:8081/user/home or localhost:8084/user/home
 
 
 
