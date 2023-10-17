@@ -6,9 +6,11 @@
 - It is a microservice project which shows the example of how microservices works.
 -  It shows the connection and communication between multiple microservices.
 
--  In this project we can see the Hotel's ratings which are given by users.
--  Where Hotel's data is coming from Hotel microservice, Rating's data are coming from Rating microservice and User's data are coming from User microservice
+-  In this project we can see the Hotel ratings which are given by users.
+-  Where Hotel data is coming from Hotel microservice, Rating data is coming from Rating microservice and User data is coming from User microservice
 -  No database has been used. the data is created in Java file only
+-  You can simply download and run this project without any changes in configuration
+-   And you don't even need a username & password.
 
 
 
