@@ -10,7 +10,7 @@
 -  Where Hotel data is coming from Hotel microservice, Rating data is coming from Rating microservice and User data is coming from User microservice
 -  No database has been used. the data is created in Java file only
 -  You can simply download and run this project without any changes in configuration
--   And you don't even need a username & password.
+
 
 
 
