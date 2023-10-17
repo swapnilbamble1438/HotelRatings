@@ -1,6 +1,16 @@
-# HotelRatings
-## It is a Springboot Microservices Application. 
-### It is SpringBoot Microservices Example. Build in Spring Tool Suite.
+
+
+### It is SpringBoot Microservices Application. Build in Spring Tool Suite.
+
+## HotelRatings
+- It is a microservice project which shows the example of how microservices works.
+-  It shows the connection and communication between multiple microservices.
+
+-  In this project we can see the Hotel's ratings which are given by users.
+-  Where Hotel's data is coming from Hotel microservice, Rating's data are coming from Rating microservice and User's data are coming from User microservice
+-  No database has been used. the data is created in Java file only
+
+
 
 
 
