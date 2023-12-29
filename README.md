@@ -1,6 +1,6 @@
 
 
-### It is SpringBoot Microservices Application. Build in Spring Tool Suite.
+### It is SpringBoot Microservices Application with Thymeleaf Frontend. Build in Spring Tool Suite.
 
 ## HotelRatings
 - It is a microservice project which shows the example of how microservices works.
